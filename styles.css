@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(./Img/fondo.avif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+}
+a{
+    color: #C62368;
+}
+h1{
+    color: #C62368;
+}
+form{
+    background-color: rgba(255, 255, 255, 0.171);
+    backdrop-filter: blur(10px);
+    width: 30rem;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+
+label{
+    color: #ffffff;
+}
+
+form input{
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff ;
+    color: white;
+    padding-left: 0.5rem;
+}
+label[for="email"],label[for="phone"],label[for="pass"],label[for="passConfirm"]{
+    width: 80%;
+}
+#email,#phone,#pass,#passConfirm{
+    width: 100%;
+}
+form button{
+    width: 5rem;
+    border: none;
+    color: #C62368;
+}
+
+span#registrado.registrado{
+    color: white;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size: 2rem;
+    }
+    form{
+        width: 90%;
+    }
+    
+    form label{
+        width: 80%;
+    }
+    form input{
+        width: 100%;
+    }
+}
